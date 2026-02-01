@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran Pani - Video Editor Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-island">
+            <div class="nav-brand">Kiran Pani</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="status-indicator">
+                <div class="status-dot-container">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Available to Hire</span>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video-background">
+            <iframe 
+                src="https://www.youtube.com/embed/otSuqjJaR8o?autoplay=1&mute=1&loop=1&playlist=otSuqjJaR8o&controls=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&origin=https://www.youtube.com" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen
+                id="hero-video"
+                onerror="this.style.display='none'; document.getElementById('video-fallback').style.display='block';">
+            </iframe>
+            <div id="video-fallback" class="video-fallback" style="display: none;">
+                <div class="fallback-content">
+                    <i class="fab fa-youtube"></i>
+                    <h3>Error 152: Video Unavailable for Embedding</h3>
+                    <p>The video cannot be embedded because embedding is disabled in YouTube settings.</p>
+                    <div class="fallback-instructions">
+                        <p><strong>To fix this:</strong></p>
+                        <ol>
+                            <li>Go to <a href="https://studio.youtube.com/" target="_blank">YouTube Studio</a></li>
+                            <li>Find video: <code>otSuqjJaR8o</code></li>
+                            <li>Edit → Show more → Enable "Allow embedding"</li>
+                            <li>Make sure video is Public or Unlisted</li>
+                        </ol>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=otSuqjJaR8o" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Kiran Pani</h1>
+                <p class="hero-subtitle">Professional Video Editor & Content Creator</p>
+                <p class="hero-description">Transforming ideas into captivating visual stories</p>
+                    <div class="hero-buttons">
+                        <a href="#skills" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm <strong>Kiran Pani</strong>, a passionate video editor and micro influencer from 
+                        <strong>Orissa, India</strong>. I specialize in creating engaging video content that tells 
+                        compelling stories and captivates audiences.
+                    </p>
+                    <p>
+                        Through my Instagram channel <strong>@the_kiran_post</strong> and YouTube channel 
+                        <strong>The Kiran Post</strong>, I share my work and connect with a growing community of 
+                        viewers who appreciate quality video content. My expertise spans from professional video 
+                        editing to cutting-edge AI video generation, ensuring every project meets the highest 
+                        standards of creativity and technical excellence.
+                    </p>
+                    <p>
+                        Whether it's vlog editing or full-scale video production, I bring 
+                        creativity, attention to detail, and a passion for storytelling to every project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-content">
+                        <div class="skill-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Video Editing</h3>
+                        <p>Professional video editing with attention to pacing, transitions, and storytelling</p>
+                    </div>
+                    <div class="skill-video">
+                        <video 
+                            controls 
+                            playsinline 
+                            preload="metadata"
+                            class="skill-video-player"
+                            poster="">
+                            <source src="Videos/VideoEditing.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-content">
+                        <div class="skill-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI Video Generation</h3>
+                        <p>Leveraging cutting-edge AI tools to create innovative and engaging video content</p>
+                    </div>
+                    <div class="skill-video">
+                        <video 
+                            controls 
+                            playsinline 
+                            preload="metadata"
+                            class="skill-video-player"
+                            poster="">
+                            <source src="Videos/AI.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-content">
+                        <div class="skill-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Vlog Editing</h3>
+                        <p>Specialized in vlog editing that maintains authenticity while enhancing visual appeal</p>
+                    </div>
+                    <div class="skill-video">
+                        <video 
+                            controls 
+                            playsinline 
+                            preload="metadata"
+                            class="skill-video-player"
+                            poster="">
+                            <source src="Videos/Vlog.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2 class="section-title">Tools I Use</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-logo premiere-pro">
+                        <span class="adobe-logo-text">Pr</span>
+                    </div>
+                    <h3>Adobe Premiere Pro</h3>
+                    <p>Professional video editing and post-production</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo after-effects">
+                        <span class="adobe-logo-text">Ae</span>
+                    </div>
+                    <h3>Adobe After Effects</h3>
+                    <p>Motion graphics, visual effects, and compositing</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo lightroom">
+                        <span class="adobe-logo-text">Lr</span>
+                    </div>
+                    <h3>Adobe Lightroom</h3>
+                    <p>Photo editing and color grading</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's collaborate on your next video project</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:kpani013@gmail.com">kpani013@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Instagram</h3>
+                            <a href="https://instagram.com/the_kiran_post" target="_blank">@the_kiran_post</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>YouTube</h3>
+                            <a href="https://www.youtube.com/@thekiranpost" target="_blank">The Kiran Post</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Orissa, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Kiran Pani. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/the_kiran_post" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@thekiranpost" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="mailto:kpani013@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
